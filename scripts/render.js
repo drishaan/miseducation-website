@@ -6,6 +6,7 @@ const config = JSON.parse(fs.readFileSync("./config.json", "utf-8"));
 const copy = JSON.parse(fs.readFileSync(config.archie.output));
 const template = fs.readFileSync(config.archie.template, "utf-8");
 
+console.log(copy)
 nunjucks.configure({ autoescape: false });
 const output = nunjucks.renderString(template, {
   ...copy,
