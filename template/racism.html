@@ -30,13 +30,30 @@
     </header>
     <article class="">
         <section class="intro">
-            <h1>{{ intro.title }}</h1>
-            <p>
-                {{ intro.preamble }}
-            </p>
+            <img class="cover" src="./assets/preambleImg.jpg" alt="">
+            <div class="introTitle">
+                <h1>{{ intro.title }}</h1>
+                <h2>{{ intro.subtitle }}</h2>
+            </div>
+            <div class="preamble">
+                <p>
+                    {{ intro.preamble }}
+                </p>
+            </div>
         </section>
+        
+        <section class="education">
+            <img class="cover" id="educationCover" src="./assets/red.jpg" alt="">
+            <div class="sectionTitle">
+                <h2>{{ education.section }}</h2>
+            </div>
+        </section>
+
         <section class="protests">
             <img class="cover" src="./assets/protests_cover.jpg" alt="">
+            <div class="sectionTitle">
+                <h2>{{ protests.section }}</h2>
+            </div>
             {% for art in protests.articles %}
             <div class="card-container">
                 <div class="card">
