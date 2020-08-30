@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width" />
     <title>Miseducation</title>
     <link rel="stylesheet" href="css/base.scss" type="text/css" charset="utf-8">
-    <link rel="shortcut icon" type="image/x-icon" href="./assets/favicon.png"/>
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/favicon.png" />
     <script src="js/index.js" charset="utf-8"></script>
     {% if env == "production" %}
     {% if config.ga_id %}
@@ -43,7 +43,7 @@
                 </p>
             </div>
         </section>
-        
+
         <section class="education">
             <img class="cover" id="educationCover" src="./assets/red.jpg" alt="">
             <div class="sectionTitle">
@@ -95,7 +95,7 @@
 
                 <br>
                 <div style="text-align:center">
-                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(1)"></span>
                     <span class="dot" onclick="currentSlide(2)"></span>
                     <span class="dot" onclick="currentSlide(3)"></span>
                     <span class="dot" onclick="currentSlide(4)"></span>
@@ -152,20 +152,20 @@
     function currentSlide(n) {
         showSlides(slideIndex = n);
     }
-        
+
     function showSlides(n) {
         var i;
         var slides = document.getElementsByClassName("mySlides");
         var dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {slideIndex = 1}    
+        if (n > slides.length) {slideIndex = 1}
         if (n < 1) {slideIndex = slides.length}
         for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";  
+            slides[i].style.display = "none";
         }
         for (i = 0; i < dots.length; i++) {
             dots[i].className = dots[i].className.replace(" active", "");
         }
-        slides[slideIndex-1].style.display = "block";  
-        dots[slideIndex-1].className += " active";
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
     }
 </script>
