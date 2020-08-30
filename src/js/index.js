@@ -1,9 +1,24 @@
+var slideIndex = 1;
 window.onload = function () {
-  slideIndex = 1;
   showSlides(slideIndex);
+
+  document.querySelector(".next").addEventListener("click", (e) => {
+    plusSlides(1);
+  });
+
+  document.querySelector(".prev").addEventListener("click", (_) => {
+    plusSlides(-1);
+  });
+
+  document.querySelectorAll(".dot").forEach((el) => {
+    el.addEventListener("click", (e) => {
+      currentSlide(e.target.dataset.slide);
+    });
+  });
 };
 
 function plusSlides(n) {
+  console.log(slideIndex);
   showSlides((slideIndex += n));
 }
 
@@ -12,6 +27,7 @@ function currentSlide(n) {
 }
 
 function showSlides(n) {
+  console.log(slideIndex);
   var i;
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("dot");
