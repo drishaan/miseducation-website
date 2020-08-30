@@ -5,8 +5,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>Racism Special Issue</title>
+    <title>Miseducation</title>
     <link rel="stylesheet" href="css/base.scss" type="text/css" charset="utf-8">
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/favicon.png"/>
     <script src="js/index.js" charset="utf-8"></script>
     {% if env == "production" %}
     {% if config.ga_id %}
@@ -20,6 +21,7 @@
     </script>
     {% endif %}
     {% endif %}
+    <base target="_blank">
 </head>
 
 <body>
@@ -111,9 +113,30 @@
             <div class="sectionTitle">
                 <h2>News</h2>
             </div>
+
+            <div class="articles">
+                {% for art in news.articles %}
+                {{art.title}}
+                <p>{{art.author}}</p>
+                {% endfor %}
+            </div>
         </section>
 
     </article>
+    <footer>
+        <a href="https://michigandaily.com"><img src="./assets/m.jpg" width=80px></a>
+        <div class="address">
+            <p><b>The Michigan Daily</b></p>
+            <p>420 Maynard St, Ann Arbor, MI 48109</p>
+            <p>(734) 418-4115</p>
+        </div>
+        <div class="credits">
+            <p>Developed by The Michigan Daily Data Team</p>
+            <p>Designed by The Michigan Daily Design Team</p>
+            <p>&nbsp;</p>
+            <p>Copyright © 2020, all rights reserved.</p>
+        </div>
+    </footer>
 </body>
 
 </html>
@@ -121,6 +144,7 @@
 <script>
     slideIndex = 1
     showSlides(slideIndex)
+
     function plusSlides(n) {
         showSlides(slideIndex += n);
     }
@@ -129,20 +153,19 @@
         showSlides(slideIndex = n);
     }
         
-
-        function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            if (n > slides.length) {slideIndex = 1}    
-            if (n < 1) {slideIndex = slides.length}
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";  
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex-1].style.display = "block";  
-            dots[slideIndex-1].className += " active";
-            }
-    </script>
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+    }
+</script>
