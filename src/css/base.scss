@@ -164,6 +164,20 @@ section.protests {
   }
 }
 
+section.education{
+  height: 250vh;
+  .articles{
+    top: -90vh;
+    position: relative;
+    color: white;
+    padding-left: 30px;
+
+    p{
+      margin-bottom: 100px;
+    }
+  }
+}
+
 section.culture {
   height: 100vh;
 
