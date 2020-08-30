@@ -165,7 +165,7 @@ section.protests {
 }
 
 section.education{
-  height: 250vh;
+  height: 200vh;
   .articles{
     top: -90vh;
     position: relative;
@@ -175,6 +175,10 @@ section.education{
     p{
       margin-bottom: 100px;
     }
+    
+    &:nth-child(odd) {
+           text-align: left;
+         }
   }
 }
 
