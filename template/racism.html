@@ -49,6 +49,13 @@
             <div class="sectionTitle">
                 <h2>{{ education.section }}</h2>
             </div>
+            
+            <div class="articles">
+                {% for art in education.articles %}
+                {{art.title}}
+                <p>{{art.author}}</p>
+                {% endfor %}
+            </div>
         </section>
 
         <section class="protests">
