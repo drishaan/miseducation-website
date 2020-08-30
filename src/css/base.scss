@@ -171,14 +171,19 @@ section.education{
     position: relative;
     color: white;
     padding-left: 30px;
+    padding-right: 30px;
+    text-align: right;
 
     p{
       margin-bottom: 100px;
     }
     
     &:nth-child(odd) {
-           text-align: left;
-         }
+      text-align: left;
+      .individualArticle{
+        margin-left: auto;
+      }
+    }
   }
 }
 
