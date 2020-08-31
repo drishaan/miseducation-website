@@ -171,7 +171,7 @@ section.protests {
 }
 
 section.education {
-  height: 320vh;
+  height: 295vh;
   .articles {
     top: -82vh;
     position: relative;
@@ -182,7 +182,9 @@ section.education {
     font-size: 1.5em;
 
     p {
+      margin-top: 5px;
       margin-bottom: 100px;
+      font-size: 0.8em;
     }
 
     &:nth-child(odd) {
@@ -251,7 +253,7 @@ section.culture {
   }
 
   .cred {
-    color: gray;
+    color: rgb(221, 221, 221);
     font-size: 0.8em;
   }
 
@@ -331,7 +333,7 @@ section.university {
 }
 
 section.news {
-  height: 280vh;
+  height: 290vh;
   .articles {
     top: -90vh;
     position: relative;
@@ -341,8 +343,8 @@ section.news {
     padding-left: 15%;
     padding-right: 15%;
     p {
-      font-size: 0.8em;
-      color: #a8a8a8;
+      font-size: 0.7em;
+      color: #eceaea;
       margin-bottom: 100px;
     }
   }
@@ -457,7 +459,7 @@ section.policing {
   }
 
   section.education{
-    height: 245vh;
+    height: 310vh;
     .articles{
       font-size: 1.7em;
     }
