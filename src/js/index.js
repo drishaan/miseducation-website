@@ -21,7 +21,9 @@ window.onload = function () {
   setHeights()
 };
 
-window.onresize = setHeights;
+if(window.innerWidth > 600){
+  window.onresize = setHeights;
+}
 
 function plusSlides(n) {
   console.log(slideIndex);

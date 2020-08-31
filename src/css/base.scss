@@ -129,6 +129,7 @@ section.intro {
 
 section.protests {
   // height: 210vh;
+  margin-top: -3px;
   .big-container {
     // top: -90vh;
     position: relative;
@@ -341,7 +342,6 @@ section.university {
 }
 
 section.news {
-  height: 290vh;
   .articles {
     // top: -90vh;
     position: relative;
@@ -481,10 +481,4 @@ section.policing {
 
   section.news {
   }
-
-  // section.policing{
-  //   h3{
-  //     font-size: 0.5em;
-  //   }
-  // }
 }
