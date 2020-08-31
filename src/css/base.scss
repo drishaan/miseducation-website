@@ -164,25 +164,25 @@ section.protests {
   }
 }
 
-section.education{
+section.education {
   height: 200vh;
-  .articles{
+  .articles {
     top: -90vh;
     position: relative;
     color: white;
     padding-left: 30px;
     padding-right: 30px;
-    text-align:right;
+    text-align: right;
 
-    p{
+    p {
       margin-bottom: 100px;
     }
-    
+
     &:nth-child(odd) {
-        text-align: left;
-        .individualArticle {
-            margin-left: auto;
-        }
+      text-align: left;
+      .individualArticle {
+        margin-left: auto;
+      }
     }
   }
 }
@@ -280,6 +280,84 @@ section.news {
       font-size: 0.8em;
       color: #a8a8a8;
       margin-bottom: 100px;
+    }
+  }
+}
+
+section.policing {
+  // height: 100vh;
+  position: relative;
+  margin-bottom: 5vh;
+
+  .sectionTitle {
+    top: 5vh;
+  }
+
+  .articles {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    top: 5vh;
+  }
+
+  .card {
+    box-sizing: border-box;
+    background-image: url(../assets/policing.jpg);
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: color;
+    background-size: cover;
+    background-position-x: -35px;
+    background-position-y: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    color: white;
+
+    .container {
+      height: calc(50vh - 10px);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    h3,
+    h4 {
+      padding: 5px 20px;
+      box-sizing: border-box;
+      margin: 0;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    h4 {
+        font-size: 1rem;
+        font-weight: normal;
+    }
+
+    &.left,
+    &.right {
+      .container {
+        width: calc(50vw - 20px);
+      }
+    }
+
+    &.left {
+      clip-path: inset(10px calc(50vw + 10px) calc(50vh + 10px) 10px);
+      padding-left: 10px;
+    }
+    &.right {
+      clip-path: inset(10px 10px calc(50vh + 10px) calc(50vw + 10px));
+      padding-left: calc(50vw + 10px);
+    }
+    &.bottom {
+      clip-path: inset(calc(50vh + 10px) 10px 10px 10px);
+      padding-left: 10px;
+      padding-top: calc(50vh + 10px);
     }
   }
 }

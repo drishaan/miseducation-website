@@ -44,19 +44,46 @@
             </div>
         </section>
 
+        <section class="policing">
+            <!-- <img class="cover" src="./assets/policing.jpg" alt=""> -->
+            <div class="sectionTitle">
+                <h2>{{ policing.section }}</h2>
+            </div>
+
+            <div class="articles">
+                <div class="card left">
+                    <div class="container">
+                        <h3>{{ policing.titleLeft }}</h3>
+                        <h4>{{ policing.authorLeft }}</h4>
+                    </div>
+                </div>
+                <div class="card right">
+                    <div class="container">
+                        <h3>{{ policing.titleRight }}</h3>
+                        <h4>{{ policing.authorRight }}</h4>
+                    </div>
+                </div>
+                <div class="card bottom">
+                    <div class="container">
+                        <h3>{{ policing.titleBottom }}</h3>
+                        <h4>{{ policing.authorBottom }}</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section class="education">
             <img class="cover" id="educationCover" src="./assets/red.jpg" alt="">
             <div class="sectionTitle">
                 <h2>{{ education.section }}</h2>
             </div>
-            
             {% for art in education.articles %}
             <div class="articles">
-                <div class = "individualArticle">
+                <div class="individualArticle">
                     {{art.title1}}
                     <p>{{art.author1}}</p>
                 </div>
-                <div class = "individualArticle">
+                <div class="individualArticle">
                     {{art.title2}}
                     <p>{{art.author2}}</p>
                 </div>
