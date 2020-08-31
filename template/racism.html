@@ -96,21 +96,23 @@
             <div class="sectionTitle">
                 <h2>{{ protests.section }}</h2>
             </div>
-            {% for art in protests.articles %}
-            <div class="card-container">
-                <div class="card">
-                    <div class="card__quote">
-                        {{ art.quote }}
-                    </div>
-                    <h3 class="card__title">
-                        <a href="#">{{ art.title }}</a>
-                    </h3>
-                    <div class="card__by">
-                        {{ art.author }}
+            <div class="big-container">
+                {% for art in protests.articles %}
+                <div class="card-container">
+                    <div class="card">
+                        <div class="card__quote">
+                            {{ art.quote }}
+                        </div>
+                        <h3 class="card__title">
+                            <a href="#">{{ art.title }}</a>
+                        </h3>
+                        <div class="card__by">
+                            {{ art.author }}
+                        </div>
                     </div>
                 </div>
+                {% endfor %}
             </div>
-            {% endfor %}
         </section>
 
         <section class="university">

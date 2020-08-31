@@ -15,6 +15,9 @@ window.onload = function () {
       currentSlide(e.target.dataset.slide);
     });
   });
+
+  console.log(window.innerWidth);
+  console.log(window.innerHeight)
 };
 
 function plusSlides(n) {
