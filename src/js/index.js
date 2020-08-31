@@ -17,8 +17,11 @@ window.onload = function () {
   });
 
   console.log(window.innerWidth);
-  console.log(window.innerHeight)
+  console.log(window.innerHeight);
+  setHeights()
 };
+
+window.onresize = setHeights;
 
 function plusSlides(n) {
   console.log(slideIndex);
@@ -48,4 +51,12 @@ function showSlides(n) {
   }
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
+}
+
+function setHeights() {
+  document.querySelectorAll("section.adjust").forEach((el) => {
+    console.log("hi");
+    el.style.height = "";
+    el.style.height = el.offsetHeight - 0.8 * window.innerHeight + "px";
+  });
 }

@@ -14,7 +14,7 @@ p {
   line-height: 1.5;
 }
 
-a{
+a {
   color: white;
 }
 
@@ -75,6 +75,10 @@ footer {
   object-fit: cover;
 }
 
+section {
+  position: relative;
+}
+
 section.intro {
   .introTitle {
     position: relative;
@@ -119,14 +123,14 @@ section.intro {
   font-size: 2em;
   padding-left: 10px;
   padding-right: 10px;
-  top: -95vh;
   position: relative;
+  margin-bottom: 5vh;
 }
 
 section.protests {
-  height: 210vh;
-  .big-container{
-    top:-90vh;
+  // height: 210vh;
+  .big-container {
+    // top: -90vh;
     position: relative;
 
     .card-container {
@@ -134,7 +138,7 @@ section.protests {
       text-align: right;
       // position: relative;
       // top: -90vh;
-  
+
       &:nth-child(odd) {
         text-align: left;
         .card {
@@ -143,7 +147,7 @@ section.protests {
       }
     }
   }
-  
+
   .card {
     background-color: black;
     box-sizing: border-box;
@@ -172,14 +176,13 @@ section.protests {
 }
 
 section.education {
-  height: 295vh;
+  // height: 295vh;
   .articles {
-    top: -82vh;
     position: relative;
     color: white;
     padding-left: 30px;
     padding-right: 30px;
-    text-align:right;
+    text-align: right;
     font-size: 1.5em;
 
     p {
@@ -198,7 +201,7 @@ section.education {
 }
 
 section.culture {
-  height: 100vh;
+  // height: 100vh;
 
   /* Slideshow container */
   .slideshow-container {
@@ -206,7 +209,7 @@ section.culture {
     width: 70%;
     position: relative;
     margin: auto;
-    top: -90vh;
+    // top: -90vh;
   }
 
   .mySlides {
@@ -276,18 +279,22 @@ section.culture {
   }
 }
 
+.content {
+    position: relative;
+    top: -100vh;
+}
+
 section.university {
-  height: 100vh;
   margin-top: -5px;
-  .article1{
+  .article1 {
     box-sizing: border-box;
     box-align: left;
     max-width: 40vw;
-    top: -90vh;
+    // top: -90vh;
     position: relative;
     color: white;
     font-size: 1.5em;
-    text-align:center;
+    text-align: center;
     padding-top: 30px;
     p {
       font-size: 0.7em;
@@ -295,16 +302,16 @@ section.university {
     }
   }
 
-  .article2{
+  .article2 {
     box-sizing: border-box;
     box-align: center;
     max-width: 66vw;
-    top: -90vh;
+    // top: -90vh;
     position: relative;
     color: white;
     font-size: 1.5em;
     word-wrap: break-word;
-    text-align:center;
+    text-align: center;
     padding-left: 27%;
     padding-top: 60px;
     p {
@@ -313,16 +320,16 @@ section.university {
     }
   }
 
-  .article3{
+  .article3 {
     box-sizing: border-box;
     box-align: right;
     max-width: 100vw;
-    top: -90vh;
+    // top: -90vh;
     position: relative;
     color: white;
     font-size: 1.5em;
     word-wrap: break-word;
-    text-align:center;
+    text-align: center;
     padding-left: 55%;
     padding-right: 50px;
     padding-top: 60px;
@@ -336,7 +343,7 @@ section.university {
 section.news {
   height: 290vh;
   .articles {
-    top: -90vh;
+    // top: -90vh;
     position: relative;
     color: white;
     font-size: 1.8em;
@@ -356,15 +363,10 @@ section.policing {
   position: relative;
   margin-bottom: 5vh;
 
-  .sectionTitle {
-    top: 5vh;
-  }
-
   .articles {
     position: relative;
     height: 100vh;
     width: 100%;
-    top: 5vh;
   }
 
   .card {
@@ -398,12 +400,12 @@ section.policing {
     }
 
     h3 {
-        font-size: 1.5em;
+      font-size: 1.5em;
     }
 
     h4 {
-        font-size: 1em;
-        font-weight: normal;
+      font-size: 1em;
+      font-weight: normal;
     }
 
     &.left,
@@ -449,7 +451,6 @@ section.policing {
   }
 
   section.protests {
-    height: 250vh;
     .card-container {
       text-align: center;
       &:nth-child(odd) {
@@ -462,15 +463,14 @@ section.policing {
     }
   }
 
-  section.education{
-    height: 310vh;
-    .articles{
+  section.education {
+    .articles {
       font-size: 1.7em;
     }
   }
 
-  section.university{
-    .article{
+  section.university {
+    .article {
       max-width: 100%;
       width: 100%;
       padding-left: 10px;
@@ -479,8 +479,7 @@ section.policing {
     }
   }
 
-  section.news{
-    height: 300vh;
+  section.news {
   }
 
   // section.policing{

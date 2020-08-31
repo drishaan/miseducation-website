@@ -5,9 +5,12 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <meta charset="UTF-8"><meta name="viewport" content="width=device-width"><base target="_blank">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <base target="_blank">
     <meta property="og:title" content="Miseducation: The Michigan Daily confronts a series of disregarded truths">
-    <meta property="og:description" content="A collection of this summer's articles which dissect systemic tendencies and cultural norms which work in tandem to create racial inequality in America.">
+    <meta property="og:description"
+        content="A collection of this summer's articles which dissect systemic tendencies and cultural norms which work in tandem to create racial inequality in America.">
     <meta property="og:image" content="https://magnify.michigandaily.us/images/miseducationHeader.jpg">
     <meta property="og:url" content="https://magnify.michigandaily.us/miseducation">
     <meta name="twitter:card" content="summary_large_image">
@@ -78,114 +81,126 @@
             </div>
         </section>
 
-        <section class="education">
+        <section class="education adjust">
             <img class="cover" id="educationCover" src="./assets/red.jpg" alt="">
-            <div class="sectionTitle">
-                <h2>{{ education.section }}</h2>
-            </div>
-            {% for art in education.articles %}
-            <div class="articles">
-                <div class="individualArticle">
-                    {{art.title1}}
-                    <p>{{art.author1}}</p>
+            <div class="content">
+                <div class="sectionTitle">
+                    <h2>{{ education.section }}</h2>
                 </div>
-                <div class="individualArticle">
-                    {{art.title2}}
-                    <p>{{art.author2}}</p>
+                {% for art in education.articles %}
+                <div class="articles">
+                    <div class="individualArticle">
+                        {{art.title1}}
+                        <p>{{art.author1}}</p>
+                    </div>
+                    <div class="individualArticle">
+                        {{art.title2}}
+                        <p>{{art.author2}}</p>
+                    </div>
                 </div>
+                {% endfor %}
             </div>
-            {% endfor %}
         </section>
 
-        <section class="protests">
+        <section class="protests adjust">
             <img class="cover" src="./assets/protests_cover.jpg" alt="">
+            <div class="content">
             <div class="sectionTitle">
                 <h2>{{ protests.section }}</h2>
             </div>
-            <div class="big-container">
-                {% for art in protests.articles %}
-                <div class="card-container">
-                    <div class="card">
-                        <div class="card__quote">
-                            {{ art.quote }}
-                        </div>
-                        <h3 class="card__title">
-                            <a href="#">{{ art.title }}</a>
-                        </h3>
-                        <div class="card__by">
-                            {{ art.author }}
+                <div class="big-container">
+                    {% for art in protests.articles %}
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card__quote">
+                                {{ art.quote }}
+                            </div>
+                            <h3 class="card__title">
+                                <a href="#">{{ art.title }}</a>
+                            </h3>
+                            <div class="card__by">
+                                {{ art.author }}
+                            </div>
                         </div>
                     </div>
+                    {% endfor %}
                 </div>
-                {% endfor %}
             </div>
         </section>
 
-        <section class="university">
+        <section class="university adjust">
             <img class="cover" src="./assets/university.jpg" alt="">
-            <div class="sectionTitle">
-                <h2>{{ university.section }}</h2>
-            </div>
-            <div class="article1 article">
-                {{ university.title1 }}
-                <p>{{ university.author1 }}</p>
-            </div>
-            <div class="article2 article">
-                {{ university.title2 }}
-                <p>{{ university.author2 }}</p>
-            </div>
-            <div class="article3 article">
-                {{ university.title3 }}
-                <p>{{ university.author3 }}</p>
+            <div class="content">
+
+                <div class="sectionTitle">
+                    <h2>{{ university.section }}</h2>
+                </div>
+                <div class="article1 article">
+                    {{ university.title1 }}
+                    <p>{{ university.author1 }}</p>
+                </div>
+                <div class="article2 article">
+                    {{ university.title2 }}
+                    <p>{{ university.author2 }}</p>
+                </div>
+                <div class="article3 article">
+                    {{ university.title3 }}
+                    <p>{{ university.author3 }}</p>
+                </div>
             </div>
         </section>
 
-        <section class="culture">
+        <section class="culture adjust">
             <img class="cover" src="./assets/culture.jpg" alt="">
-            <div class="sectionTitle">
-                <h2>{{ culture.section }}</h2>
-            </div>
-
-            <div class="slideshow-container">
-
-                {% for art in culture.articles %}
-                <div class="mySlides fade">
-                    <div class="text">
-                        {{ art.title }}
-                        <p class="cred">{{art.author}}</p>
-                    </div>
+            <div class="content">
+                <div class="sectionTitle">
+                    <h2>{{ culture.section }}</h2>
                 </div>
-                {% endfor %}
 
-                <a class="prev">&#10094;</a>
-                <a class="next">&#10095;</a>
+                <div class="slideshow-container">
 
-                <br>
-                <div style="text-align:center">
-                    <span class="dot" data-slide="1"></span>
-                    <span class="dot" data-slide="2"></span>
-                    <span class="dot" data-slide="3"></span>
-                    <span class="dot" data-slide="4"></span>
-                    <span class="dot" data-slide="5"></span>
-                    <span class="dot" data-slide="6"></span>
-                    <span class="dot" data-slide="7"></span>
-                    <span class="dot" data-slide="8"></span>
-                    <span class="dot" data-slide="9"></span>
+                    {% for art in culture.articles %}
+                    <div class="mySlides fade">
+                        <div class="text">
+                            {{ art.title }}
+                            <p class="cred">{{art.author}}</p>
+                        </div>
+                    </div>
+                    {% endfor %}
+
+                    <a class="prev">&#10094;</a>
+                    <a class="next">&#10095;</a>
+
+                    <br>
+                    <div style="text-align:center">
+                        <span class="dot" data-slide="1"></span>
+                        <span class="dot" data-slide="2"></span>
+                        <span class="dot" data-slide="3"></span>
+                        <span class="dot" data-slide="4"></span>
+                        <span class="dot" data-slide="5"></span>
+                        <span class="dot" data-slide="6"></span>
+                        <span class="dot" data-slide="7"></span>
+                        <span class="dot" data-slide="8"></span>
+                        <span class="dot" data-slide="9"></span>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section class="news">
             <img class="cover" src="./assets/news.jpg" alt="">
-            <div class="sectionTitle">
-                <h2>News</h2>
-            </div>
+            <div class="content">
 
-            <div class="articles">
-                {% for art in news.articles %}
-                {{art.title}}
-                <p>{{art.author}}</p>
-                {% endfor %}
+                <div class="sectionTitle">
+                    <h2>News</h2>
+                </div>
+
+                <div class="articles">
+                    {% for art in news.articles %}
+                    {{art.title}}
+                    <p>{{art.author}}</p>
+                    {% endfor %}
+                </div>
             </div>
         </section>
 
