@@ -267,19 +267,57 @@ section.culture {
 }
 
 section.university {
-  height: 150vh;
+  height: 135vh;
   .article1{
+    box-sizing: border-box;
+    box-align: left;
+    max-width: 40vw;
     top: -90vh;
     position: relative;
     color: white;
-    font-size: 1.8em;
-    padding-left: 30px;
-    padding-right: 30px;
-    text-align:left;
+    font-size: 2em;
+    text-align:center;
+    padding-top: 30px;
     p {
-      font-size: 0.8em;
-      color: #a8a8a8;
-      margin-bottom: 100px;
+      font-size: 0.7em;
+      color: white;
+    }
+  }
+
+  .article2{
+    box-sizing: border-box;
+    box-align: center;
+    max-width: 66vw;
+    top: -90vh;
+    position: relative;
+    color: white;
+    font-size: 2em;
+    word-wrap: break-word;
+    text-align:center;
+    padding-left: 27%;
+    padding-top: 90px;
+    p {
+      font-size: 0.7em;
+      color: white;
+    }
+  }
+
+  .article3{
+    box-sizing: border-box;
+    box-align: right;
+    max-width: 100vw;
+    top: -90vh;
+    position: relative;
+    color: white;
+    font-size: 2em;
+    word-wrap: break-word;
+    text-align:center;
+    padding-left: 55%;
+    padding-right: 50px;
+    padding-top: 60px;
+    p {
+      font-size: 0.7em;
+      color: white;
     }
   }
 }
