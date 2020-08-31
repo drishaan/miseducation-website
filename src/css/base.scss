@@ -164,17 +164,18 @@ section.protests {
   }
 }
 
-section.education{
-  height: 270vh;
-  .articles{
-    top: -90vh;
+section.education {
+  height: 320vh;
+  .articles {
+    top: -82vh;
     position: relative;
     color: white;
     padding-left: 30px;
     padding-right: 30px;
     text-align:right;
+    font-size: 1.5em;
 
-    p{
+    p {
       margin-bottom: 100px;
     }
     
@@ -267,7 +268,8 @@ section.culture {
 }
 
 section.university {
-  height: 135vh;
+  height: 100vh;
+  margin-top: -5px;
   .article1{
     box-sizing: border-box;
     box-align: left;
@@ -275,7 +277,7 @@ section.university {
     top: -90vh;
     position: relative;
     color: white;
-    font-size: 2em;
+    font-size: 1.5em;
     text-align:center;
     padding-top: 30px;
     p {
@@ -291,11 +293,11 @@ section.university {
     top: -90vh;
     position: relative;
     color: white;
-    font-size: 2em;
+    font-size: 1.5em;
     word-wrap: break-word;
     text-align:center;
     padding-left: 27%;
-    padding-top: 90px;
+    padding-top: 60px;
     p {
       font-size: 0.7em;
       color: white;
@@ -309,7 +311,7 @@ section.university {
     top: -90vh;
     position: relative;
     color: white;
-    font-size: 2em;
+    font-size: 1.5em;
     word-wrap: break-word;
     text-align:center;
     padding-left: 55%;
@@ -367,6 +369,22 @@ section.news {
     .card {
       margin-bottom: 70px;
       font-size: 1.5em;
+    }
+  }
+
+  section.education{
+    .articles{
+      font-size: 1.7em;
+    }
+  }
+
+  section.university{
+    .article{
+      max-width: 100%;
+      width: 100%;
+      padding-left: 10px;
+      padding-right: 10px;
+      font-size: 1.9em;
     }
   }
 }
