@@ -266,6 +266,24 @@ section.culture {
   }
 }
 
+section.university {
+  height: 150vh;
+  .article1{
+    top: -90vh;
+    position: relative;
+    color: white;
+    font-size: 1.8em;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align:left;
+    p {
+      font-size: 0.8em;
+      color: #a8a8a8;
+      margin-bottom: 100px;
+    }
+  }
+}
+
 section.news {
   height: 280vh;
   .articles {
